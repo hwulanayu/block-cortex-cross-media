@@ -246,7 +246,7 @@
                       cross_media_campaign_ranks_ndt.rank_by_date,
                       cross_media_campaign_ranks_ndt.is_within_campaign_limit]
       sorts: [cross_media_campaign_daily_agg.source_system,
-              cross_media_campaign_daily_agg.min_report_date,
+              cross_media_campaign_dates_ndt.min_report_date,
               cross_media_campaign_daily_agg.campaign_name_short]
       hidden_points_if_no: [cross_media_campaign_ranks_ndt.is_within_campaign_limit]
       x_axis_gridlines: false
@@ -442,7 +442,7 @@
                       cross_media_campaign_ranks_ndt.is_within_campaign_limit]
       sorts: [cross_media_campaign_daily_agg.source_system,
               cross_media_campaign_daily_agg.campaign_name_short,
-              cross_media_campaign_daily_agg.min_report_date]
+              cross_media_campaign_dates_ndt.min_report_date]
       hidden_points_if_no: [cross_media_campaign_ranks_ndt.is_within_campaign_limit]
       x_axis_gridlines: false
       y_axis_gridlines: false
@@ -463,7 +463,7 @@
       interpolation: step
       point_style: circle
       y_axes: [{label: '', orientation: left,
-                  series: [{axisId: cross_media_campaign_daily_agg.total_clickd_formatted,
+                  series: [{axisId: cross_media_campaign_daily_agg.total_clicks_formatted,
                                 id: cross_media_campaign_daily_agg.total_clicks_formatted,
                                 name: Total Impressions}],},
                {label: '', orientation: right,

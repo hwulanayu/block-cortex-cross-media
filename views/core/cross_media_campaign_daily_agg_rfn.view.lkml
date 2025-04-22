@@ -205,12 +205,14 @@ view: +cross_media_campaign_daily_agg {
 
   dimension_group: report {
     description: "Reporting date of campaign metrics like clicks and impressions"
+    convert_tz: no
   }
 
   dimension_group: last_update_ts {
     timeframes: [raw, date, time]
     label: "Last Update"
     description: "Timestamp when the record was last updated"
+    convert_tz: no
   }
 
 #} end date dimensions

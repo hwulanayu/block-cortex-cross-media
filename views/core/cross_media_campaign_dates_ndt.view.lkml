@@ -54,11 +54,13 @@ view: cross_media_campaign_dates_ndt {
     dimension: min_report_date {
       type: date
       description: "Earliest report date of campaign"
+      convert_tz: no
     }
 
     dimension: max_report_date {
       type: date
       description: "Latest report date of campaign"
+      convert_tz: no
     }
 
     dimension: report_date_range {

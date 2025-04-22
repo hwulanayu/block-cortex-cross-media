@@ -11,7 +11,7 @@
 
 - dashboard: cross_media_4_detailed_performance
   title:  Cross Media Detailed Performance
-
+  description: "All performance metrics and spend by campaign in tabular format"
   extends: template_cross_media
   crossfilter_enabled: false
 

@@ -1,15 +1,15 @@
 constant: CONNECTION_NAME {
-  value: "connection name"
+  value: "cortex_marketing"
   export: override_required
 }
 
 constant: GCP_PROJECT_ID {
-  value: "gcp project id"
+  value: "paragon-cortex"
   export: override_required
 }
 
 constant: REPORTING_DATASET {
-  value: "reporting dataset"
+  value: "CORTEX_META_REPORTING"
   export: override_required
 }
 
